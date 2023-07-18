@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+        }
+        #darkGodWorld {
+            display: none;
+        }
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的网站</h1>
+    </header>
+
+    <main id="mainPage">
+        <p>这个世界是数个大型浮空岛与无数小浮空岛构成的。其中生存着无数的生灵......[剩余故事内容]</p>
+        <button onclick="navigateTo('darkGodWorld')">进入暗神的世界</button>
+    </main>
+
+    <main id="darkGodWorld">
+        <p>这个世界是数个大型浮空岛与无数小浮空岛构成的。其中生存着无数的生灵。有人类种族的【澳戴蒙】帝国，精灵种族的【特林娜】精灵联合公国，兽人种族的【比卢麦】联盟。其中还有占据了大部分浮空岛屿的【魔族】和无数的野兽生灵与花鸟鱼虫。
+        在这些生灵之上，有着7位主宰世界的伟大神明。分别是构建世界四大元素的【地】【风】【水】【火】的神和掌管二族的【兽神】，【精灵神】。最后是伟大的【光明神】。
+        人类没有专属的神明，但是通过对神明的信仰可以获得神赐得到【技能】。
+        而其他智慧种族也可以信仰神明来获得【技能】。但是魔族除外。魔族有着他们独特的信仰——【原初魔王】。
+        据传，在上古时期，7神与原初魔王大战，为了封印原初魔王，7神赋予了【勇者】职权，封印了魔王，但是却因为权柄的散失，无法干涉现世，只能通过神**嘱咐各自的主教们。
+        而被封印的原初魔王带着怨恨，向世界发出诅咒，每过一个时期，会有魔族带着他/她/它/牠的力量降生，等到成年之时，就会成为新一代的魔王，掌管整个魔族，对世界发起毁灭。
+        而诸神不甘示弱，将【魔王】与【勇者】绑定，魔王的出现最终只会是被勇者击败。
+        【勇者】权能则是会在一定时间赋予在人类当中一人上。只有积极向上，乐观开朗，正义勇敢，沉着冷静，计谋多测的人才会成为勇者。
+        而诸神也为了让勇者击败魔王，赐予了7神各自祝福的神器分散在世界各地。
+        分别是：【勇者圣剑】【勇者圣冠】【勇者圣铠】【勇者圣盾】【勇者圣靴】【勇者圣坠】。
+        当勇者集齐这些神器，便会获得几乎等同于7位神明的力量。
+        而每件神器也各有各的威能，于是，探险世界各地寻找勇者圣器的时代开始了。每个人都想成为击败魔王的勇者。</p>
+        <button onclick="navigateTo('mainPage')">返回主页</button>
+    </main>
+
+    <footer>
+        <p>版权所有 &copy; 2023</p>
+    </footer>
+
+    <script>
+        function navigateTo(pageId) {
+            document.getElementById('mainPage').style.display = 'none';
+            document.getElementById('darkGodWorld').style.display = 'none';
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
